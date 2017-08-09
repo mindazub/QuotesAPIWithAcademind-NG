@@ -1,6 +1,9 @@
+<hr>
 <button class="btn btn-primary" (click)="onGetQuotes()">
 	Get Quotes
 </button>
 <hr>
+<div class="big-quote-title">
 <app-quote *ngFor="let quote of quotes" [quote]="quote" (quoteDeleted)="onDeleted($event)">
 </app-quote>
+</div>
