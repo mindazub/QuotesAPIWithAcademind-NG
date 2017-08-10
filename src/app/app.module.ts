@@ -11,6 +11,8 @@ import { routing } from "./app.routing";
 import { QuoteService } from './quote.service';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { AuthService } from './auth.service';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { SigninComponent } from './signin/signin.component';
     FormsModule,
     routing
   ],
-  providers: [QuoteService],
+  providers: [QuoteService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
